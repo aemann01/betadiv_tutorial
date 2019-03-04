@@ -1,1 +1,1 @@
-# betadiv_tutorial
+# Beta diversity tutorial for lab meeting
