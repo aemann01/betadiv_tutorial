@@ -4,7 +4,7 @@ Required R packages:
 
 * [ape](https://cran.r-project.org/web/packages/ape/index.html)
 
-``` ```
+```install.packages("ape")```
 
 * [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
 
