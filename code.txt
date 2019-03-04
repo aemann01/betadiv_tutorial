@@ -35,7 +35,6 @@ qplot(pcoa.taxa$vectors[,1], pcoa.taxa$vectors[,2], color=merge$Phyl_Group, shap
 #Unifrac
 ###############
 library("phyloseq");packageVersion("phyloseq")
-library(ape)
 
 #convert biom to matrix format, read in tree
 taxa <- as.matrix(taxa)
