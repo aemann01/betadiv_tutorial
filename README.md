@@ -17,4 +17,5 @@ Required R packages:
 * [phyloseq](https://joey711.github.io/phyloseq/)
 
 ```source('http://bioconductor.org/biocLite.R')
+
 biocLite('phyloseq')```
