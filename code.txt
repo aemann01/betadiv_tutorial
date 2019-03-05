@@ -16,9 +16,8 @@ taxa.md <- read.table("map.txt", header=T, sep="\t", row.names=1)
 merge <- transform(merge(taxa.t, taxa.md, by=0), row.names=Row.names)
 
 #get braycurtis distance matrix on your count table (first need to determine which rows you want to pull from your merged dataframe)
-ncol(taxa.t)
-#2394 + 1 
-bcdist <- vegdist(merge[,2:2395], method="bray")
+n <- ncol(taxa.t) -1
+bcdist <- vegdist(merge[,2:n], method="bray")
 
 #get your coordinates from your dissimilarity matrix
 pcoa.taxa <- pcoa(bcdist, correction="none")
